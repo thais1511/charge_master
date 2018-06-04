@@ -34,6 +34,8 @@ import com.example.tapimac1.progressviewlibrary.CircleSegmentBar;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     private TabLayout tabLayout;
@@ -151,6 +153,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
         final ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(viewPagerAdapter);
+        viewPager.setOffscreenPageLimit(3 );
         tabLayout.setupWithViewPager(viewPager);
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -172,7 +175,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
         IntentFilter intentFilter = new IntentFilter("android.intent.action.AIRPLANE_MODE");
         registerReceiver(new AirPlaneReceiver(), intentFilter);
+
     }
+
 
     private void pushNotification() {
         Intent resultIntent = new Intent(getApplicationContext(), MainActivity.class);

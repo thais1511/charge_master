@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="360dp"
+            android:layout_height="@dimen/charger_top_layout_height"
             android:background="?colorPrimary"
             android:orientation="vertical"
             android:paddingBottom="6dp">

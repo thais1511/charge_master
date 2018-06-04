@@ -40,17 +40,6 @@ public class CleanFragment extends Fragment {
         ActionListAdapter actionListAdapter = new ActionListAdapter(getContext(), listAction);
         listviewAction.setAdapter(actionListAdapter);
 
-        listviewAction.setOnTouchListener(new View.OnTouchListener() {
-            // Setting on Touch Listener for handling the touch inside ScrollView
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                // Disallow the touch request for parent scroll on touch of child view
-                v.getParent().requestDisallowInterceptTouchEvent(true);
-                return false;
-            }
-        });
-
-
         return view;
     }
 

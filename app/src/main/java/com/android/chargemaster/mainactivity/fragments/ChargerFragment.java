@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.chargemaster.R;
+import com.android.chargemaster.activities.ReminderActivity;
 import com.android.chargemaster.mainactivity.interfaces.SetRingerMode;
 import com.android.chargemaster.mainactivity.utils.ChargerUtils;
 
@@ -116,6 +117,14 @@ public class ChargerFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     ChargerUtils.setSync(getActivity());
+                }
+            });
+
+            view.findViewById(R.id.setting_layout_reminder).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getContext(), ReminderActivity.class);
+                    startActivity(intent);
                 }
             });
         }

@@ -13,8 +13,8 @@
         android:layout_height="match_parent"
         app:mnpMaxValue="23"
         app:mnpMinValue="0"
-        app:mnpSeparatorColor="@color/color_white"
-        app:mnpTextColor="@color/color_white"
+        app:mnpSeparatorColor="?colorAccent"
+        app:mnpTextColor="?colorAccent"
         app:mnpTextSize="18sp"
         app:mnpWrapped="true" />
 
@@ -24,7 +24,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:text=":"
-        android:textColor="@color/color_white"
+        android:textColor="?colorAccent"
         android:textSize="20sp" />
 
     <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
@@ -33,8 +33,8 @@
         android:layout_height="match_parent"
         app:mnpMaxValue="59"
         app:mnpMinValue="0"
-        app:mnpSeparatorColor="@color/color_white"
-        app:mnpTextColor="@color/color_white"
+        app:mnpSeparatorColor="?colorAccent"
+        app:mnpTextColor="?colorAccent"
         app:mnpTextSize="18sp"
         app:mnpWrapped="true" />
 
@@ -44,7 +44,7 @@
         android:gravity="center"
         android:padding="18dp"
         android:text="-"
-        android:textColor="@color/color_white"
+        android:textColor="?colorAccent"
         android:textSize="20sp" />
 
     <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
@@ -53,8 +53,8 @@
         android:layout_height="match_parent"
         app:mnpMaxValue="23"
         app:mnpMinValue="0"
-        app:mnpSeparatorColor="@color/color_white"
-        app:mnpTextColor="@color/color_white"
+        app:mnpSeparatorColor="?colorAccent"
+        app:mnpTextColor="?colorAccent"
         app:mnpTextSize="18sp"
         app:mnpWrapped="true" />
 
@@ -64,7 +64,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:text=":"
-        android:textColor="@color/color_white"
+        android:textColor="?colorAccent"
         android:textSize="20sp" />
 
     <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
@@ -74,8 +74,8 @@
         app:mnpEditable="false"
         app:mnpMaxValue="59"
         app:mnpMinValue="0"
-        app:mnpSeparatorColor="@color/color_white"
-        app:mnpTextColor="@color/color_white"
+        app:mnpSeparatorColor="?colorAccent"
+        app:mnpTextColor="?colorAccent"
         app:mnpTextSize="18sp"
         app:mnpWrapped="true" />
 </LinearLayout>
