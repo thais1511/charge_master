@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?colorPrimary"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/select_mode_radio_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/color_white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/lock_screen_mode"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.AppCompatRadioButton
+        android:id="@+id/select_mode_radio_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/color_white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/smart_charge_only"
+        android:textColor="@color/color_white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

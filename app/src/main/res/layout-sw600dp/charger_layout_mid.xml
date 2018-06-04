@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/setting_layout_selectmode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp">
+
+            <ImageView
+                android:id="@+id/setting_iconphone"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:padding="6dp"
+                android:src="@drawable/ic_telephone_battery_half_charged" />
+
+            <TextView
+                android:id="@+id/setting_optimize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/setting_iconphone"
+                android:text="@string/optimize_battery"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/color_white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?color_line" />
+
+        <RelativeLayout
+            android:id="@+id/setting_layout_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/setting_icon_noti"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_bell" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/setting_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/setting_icon_noti"
+                android:text="@string/charge_report"
+                android:textColor="@color/color_white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/setting_noti_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/setting_notification"
+                android:layout_centerVertical="true"
+                android:text="@string/off"
+                android:textColor="@color/color_white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?color_line" />
+
+        <RelativeLayout
+            android:id="@+id/setting_layout_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/setting_icon_reminder"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_bell" />
+
+            <TextView
+                android:id="@+id/setting_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/setting_icon_reminder"
+                android:text="@string/full_charge_reminder"
+                android:textColor="@color/color_white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/setting_reminder_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/off"
+                android:textColor="@color/color_white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?color_line" />
+
+        <RelativeLayout
+            android:id="@+id/setting_layout_wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/setting_icon_wallpaper"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_mountain_range_on_black_background" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/setting_change_wallpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/setting_icon_wallpaper"
+                android:text="@string/change_wallpaper"
+                android:textColor="@color/color_white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

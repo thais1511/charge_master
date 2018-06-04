@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Charge Master</string>
+    <string name="settings">Setting</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="smart_charge">Smart Charge</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="full_charge_reminder">Full Charge Reminder</string>
+    <string name="notification">Notification</string>
+    <string name="other">Other</string>
+    <string name="like_us">Like us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="user_exp">User Experience Program</string>
+    <string name="about">About</string>
+    <string name="change_wallpaper">Change Wallpaper</string>
+    <string name="lock_screen_mode"><![CDATA[Smart charging & Lock screen]]></string>
+    <string name="smart_charge_only">Smart charging only</string>
+    <string name="choose_ringtone">Select Ringtone</string>
+    <string name="silent_mode">Silent Mode</string>
+    <string name="always_remind">Always Remind</string>
+    <string name="default_string">Default</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_ringtone">Select Ringtone</string>
+    <string name="give_us_5star">Please give us 5 star rating</string>
+    <string name="channel_name">Charge Master Notification Channel</string>
+    <string name="channel_description">Notification Channel</string>
+    <string name="full_charge_notification">Your device has full charge</string>
+    <string name="optimize_battery">Optimize Battery</string>
+    <string name="charge_report">Charge Report</string>
+    <string name="batter_cooler">Battery Cooler</string>
+    <string name="memory">Memory</string>
+    <string name="wifi">Wifi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="brightness">Brightness</string>
+    <string name="connect_success">Connect success</string>
+    <string name="connect_fail">Connect Fail</string>
+    <string name="trash_cleaner">Trash Cleaner</string>
+    <string name="security_inspection">Connect Fail</string>
+    <string name="app_lock">App Lock</string>
+    <string name="memory_boost">Memory Boost</string>
+    <string name="fast_charge">Fast Charge</string>
+    <string name="duplicated_photo">Duplicated Photo</string>
+
+</resources>

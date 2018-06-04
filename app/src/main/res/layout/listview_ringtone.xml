@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_above="@id/ringtone_layout_action"
+        android:id="@+id/ringtone_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ringtone_layout_action"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+        <TextView
+            android:text="@string/cancel"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:background="@color/color_line_dark_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="@string/ok"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

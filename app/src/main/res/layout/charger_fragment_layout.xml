@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="?colorPrimary"
+            android:orientation="vertical"
+            android:paddingBottom="6dp">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7">
+                <com.example.tapimac1.progressviewlibrary.CircleSegmentBar
+                    android:id="@+id/segmentProgress"
+                    app:bar_width="16dp"
+                    app:progress_width="16dp"
+                    android:layout_centerInParent="true"
+                    app:bar_color="@color/colorAccent"
+                    app:progress_color="@android:color/darker_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <RelativeLayout
+                    android:layout_margin="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape">
+                    <me.itangqi.waveloadingview.WaveLoadingView
+                        android:id="@+id/waveloadingView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="6dp"
+                        android:elevation="2dp"
+                        app:wlv_borderColor="@color/colorWhite"
+                        app:wlv_borderWidth="0dp"
+                        app:wlv_round_rectangle="true"
+                        app:wlv_shapeType="circle"
+                        app:wlv_titleCenter="Center Title"
+                        app:wlv_titleCenterColor="@android:color/white"
+                        app:wlv_titleCenterSize="20sp"
+                        app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+                        app:wlv_titleCenterStrokeWidth="3dp"
+                        app:wlv_titleTopColor="@color/colorWhite"
+                        app:wlv_titleTopSize="24sp"
+                        app:wlv_triangle_direction="north"
+                        app:wlv_waveAmplitude="50"
+                        app:wlv_waveColor="@color/colorAccent" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="6dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/charger_btn_battery">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:text="@string/batter_cooler"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/charger_temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_thermometer" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="4dp"
+                    app:cardPreventCornerOverlap="false"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/charger_btn_memory">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:text="@string/memory"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/charger_memory_usage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ic_dark_ray" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/charger_layout_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+
+        <include
+            layout="@layout/charger_action_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="color_line" format="color|reference"/>
+    <attr name="color_text" format="color|reference"/>
+    <attr name="color_text_primary" format="color|reference"/>
+    <attr name="color_text_enable" format="color|reference"/>
+    <attr name="color_text_disable" format="color|reference"/>
+
+</resources>

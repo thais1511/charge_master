@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+        android:id="@+id/reminder_start_hour"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        app:mnpMaxValue="23"
+        app:mnpMinValue="0"
+        app:mnpSeparatorColor="@color/color_white"
+        app:mnpTextColor="@color/color_white"
+        app:mnpTextSize="18sp"
+        app:mnpWrapped="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=":"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+
+    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+        android:id="@+id/reminder_start_minute"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        app:mnpMaxValue="59"
+        app:mnpMinValue="0"
+        app:mnpSeparatorColor="@color/color_white"
+        app:mnpTextColor="@color/color_white"
+        app:mnpTextSize="18sp"
+        app:mnpWrapped="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="-"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+
+    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+        android:id="@+id/reminder_end_hour"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        app:mnpMaxValue="23"
+        app:mnpMinValue="0"
+        app:mnpSeparatorColor="@color/color_white"
+        app:mnpTextColor="@color/color_white"
+        app:mnpTextSize="18sp"
+        app:mnpWrapped="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=":"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+
+    <com.github.stephenvinouze.materialnumberpickercore.MaterialNumberPicker
+        android:id="@+id/reminder_end_minute"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        app:mnpEditable="false"
+        app:mnpMaxValue="59"
+        app:mnpMinValue="0"
+        app:mnpSeparatorColor="@color/color_white"
+        app:mnpTextColor="@color/color_white"
+        app:mnpTextSize="18sp"
+        app:mnpWrapped="true" />
+</LinearLayout>

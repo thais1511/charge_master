@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b383e</color>
+    <color name="colorPrimaryDark">#131e29</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="colorWhite">#FFFF</color>
+    <color name="color_line_light_gray">#c9c9c9</color>
+    <color name="color_white">#FFFF</color>
+    <color name="color_text_normal_DarkTheme">#9E9E9E</color>
+    <color name="color_text_enable_DarkTheme">#424242</color>
+    <color name="color_text_disable_DarkTheme">#EEEEEE</color>
+    <color name="color_text_primary_DarkTheme">#90A4AE</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="color_disable_DarkTheme">#616161</color>
+
+    //Light Theme
+    <color name="colorPrimaryLightTheme">#2b383e</color>
+    <color name="colorPrimaryDarkLightTheme">#131e29</color>
+    <color name="colorAccentLightTheme">#F18F41</color>
+    <color name="color_text_normal_LightTheme">#9E9E9E</color>
+    <color name="color_text_enable_LightTheme">#424242</color>
+    <color name="color_text_disable_LightTheme">#EEEEEE</color>
+    <color name="color_text_primary_LightTheme">#90A4AE</color>
+    <color name="color_line_dark_gray">#efefef</color>
+    <color name="color_disable_LightTheme">#FAFAFA</color>
+</resources>
